@@ -1,7 +1,9 @@
 version: '3'
+
 volumes:
   onfhirdata:
     driver: local
+
 services:
   mongo:
     image: library/mongo:4.2
@@ -11,12 +13,11 @@ services:
   onfhir:
     build: .
     environment:
-      - APP_CONF_FILE=/fhir/conf/application-docker.conf
+      - APP_CONF_FILE=/fhir/fair4health.conf
       - LOGBACK_CONF_FILE=/fhir/conf/logback.xml
       - FHIR_ROOT_URL=http://127.0.0.1:8080/fhir
       - DB_HOST=mongo:27017
-      - LOG_LEVEL=INFO
+      - LOG_LEVEL=DEBUG
     ports:
       - "8080:8080"
-    volumes:
-      - ./sample-setup:/fhir
+
