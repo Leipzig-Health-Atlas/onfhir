@@ -10,7 +10,7 @@ COPY onfhir-server-r5 /home/app/onfhir-server-r5
 COPY onfhir-server-stu3 /home/app/onfhir-server-stu3
 COPY onfhir-validation /home/app/onfhir-validation
 COPY pom.xml /home/app
-RUN mvn -B -f /home/app/pom.xml clean package -DskipTests=true
+RUN mvn -B -f /home/app/pom.xml clean package
 
 
 
