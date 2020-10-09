@@ -29,7 +29,7 @@ FROM openjdk:11
 # Create folders
 RUN mkdir -p /onfhir
 
-COPY --from=build /home/app/onfhir-server-r4/target/onfhir-server-standalone.jar /fhir/onfhir-standalone.jar
+COPY --from=build /home/app/onfhir-server-r4/target/onfhir-server-standalone.jar /fhir/
 COPY --from=config /common-data-model/onfhir.io/conf /fhir/conf
 COPY --from=config /common-data-model/onfhir.io/fair4health.conf /fhir/
 
