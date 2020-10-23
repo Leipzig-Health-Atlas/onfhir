@@ -1,0 +1,59 @@
+{
+  "resourceType": "CodeSystem",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
+    ]
+  },
+  "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-fall/CodeSystem/Aufnahmegrund",
+  "valueSet": "https://www.medizininformatik-initiative.de/fhir/modul-fall/core/ValueSet/Aufnahmegrund",
+  "experimental": false,
+  "date": "2020-05-02",
+  "publisher": "Medizininformatik Initiative",
+  "count": 9,
+  "name": "Aufnahmegrund",
+  "title": "Aufnahmegrund",
+  "version": "0.9",
+  "status": "draft",
+  "description": "Aufnahmegrund nach §21 KHEntgG",
+  "compositional": false,
+  "content": "complete",
+  "concept": [
+    {
+      "code": "01",
+      "display": "Krankenhausbehandlung, vollstationär"
+    },
+    {
+      "code": "02",
+      "display": "Krankenhausbehandlung, vollstationär mit vorausgegangener vorstationärer Behandlung"
+    },
+    {
+      "code": "03",
+      "display": "Krankenhausbehandlung, teilstationär"
+    },
+    {
+      "code": "04",
+      "display": "vorstationäre Behandlung ohne anschließende vollstationäre Behandlung"
+    },
+    {
+      "code": "05",
+      "display": "Stationäre Entbindung"
+    },
+    {
+      "code": "06",
+      "display": "Geburt"
+    },
+    {
+      "code": "07",
+      "display": "Wiederaufnahme wegen Komplikationen (Fallpauschale) nach KFPV 2003"
+    },
+    {
+      "code": "08",
+      "display": "Stationäre Aufnahme zur Organentnahme"
+    },
+    {
+      "code": "10",
+      "display": "Stationsäquivalente Behandlung"
+    }
+  ]
+}

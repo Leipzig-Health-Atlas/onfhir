@@ -1,0 +1,64 @@
+{
+  "resourceType": "CodeSystem",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
+    ]
+  },
+  "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/wirkstofftyp",
+  "version": "1.0",
+  "name": "Wirkstofftyp",
+  "title": "CodeSystem Wirkstofftypen",
+  "status": "active",
+  "experimental": false,
+  "publisher": "Medizininformatik Initiative",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.medizininformatik-initiative.de"
+        }
+      ]
+    }
+  ],
+  "description": "Codes zur Differenzierung von Wirkstoffen zwischen genauer Substanz (z.B. Salz, Ester etc.), allgemeiner (normalisierter) Substanz und Kombinationscode für mehrere Wirkstoffe.",
+  "caseSensitive": true,
+  "valueSet": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/wirkstofftyp",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "IN",
+      "display": "ingredient",
+      "definition": "The name of the substance.",
+      "designation": [
+        {
+          "language": "de-DE",
+          "value": "Wirkstoff allgemein"
+        }
+      ]
+    },
+    {
+      "code": "PIN",
+      "display": "precise ingredient",
+      "definition": "The name of the substance expressed precisely as a salt or ester of the ingredient.",
+      "designation": [
+        {
+          "language": "de-DE",
+          "value": "Wirkstoff präzise"
+        }
+      ]
+    },
+    {
+      "code": "MIN",
+      "display": "multiple ingredients",
+      "definition": "The name of the substances in a combination product.",
+      "designation": [
+        {
+          "language": "de-DE",
+          "value": "Kombinationswirkstoff"
+        }
+      ]
+    }
+  ]
+}

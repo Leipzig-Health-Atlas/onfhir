@@ -1,0 +1,41 @@
+{
+  "resourceType": "ValueSet",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
+    ]
+  },
+  "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Laborergebnis-semiquantitativ",
+  "version": "1.0",
+  "title": "Semi-quantitative Laborergebnisse",
+  "name": "Semi_quantitative_Laborergebnisse",
+  "status": "active",
+  "experimental": false,
+  "publisher": "Medizininformatik Initiative",
+  "description": "Kodierung für semi-quantitative Laborergebnisse",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "410594000",
+            "display": "Definitely not present"
+          },
+          {
+            "code": "441614007",
+            "display": "Present one plus out of three plus"
+          },
+          {
+            "code": "441517005",
+            "display": "Present two plus out of three plus"
+          },
+          {
+            "code": "441521003",
+            "display": "Present three plus out of three plus"
+          }
+        ]
+      }
+    ]
+  }
+}

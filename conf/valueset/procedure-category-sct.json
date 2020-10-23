@@ -1,0 +1,44 @@
+{
+    "resourceType": "ValueSet",
+    "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/ValueSet/procedures-category-sct",
+    "version": "1.0",
+    "date": "2020-09-18",
+    "description": "Enthaelt alle SNOMED Codes für ein Mapping der OPS Klassentitel",
+    "experimental": false,
+    "name": "procedure-category-sct",
+    "publisher": "https://www.medizininformatik-initiative.de",
+    "status": "active",
+    "compose": {
+        "include": [
+            {
+                "system": "http://snomed.info/sct",
+                "concept": [
+                    {
+                      "code": "103693007",
+                      "display": "Diagnostic procedure"
+                    },
+                    {
+                      "code": "363679005",
+                      "display": "Imaging"
+                    },
+                    {
+                      "code": "387713003",
+                      "display": "Surgical procedure"
+                    },
+                    {
+                      "code": "18629005",
+                      "display": "Administration of medicine"
+                    },
+                    {
+                      "code": "277132007",
+                      "display": "Therapeutic procedure"
+                    },
+                    {
+                      "code": "394841004",
+                      "display": "Other category"
+                    }
+                  ]
+            }
+        ]
+    }
+}

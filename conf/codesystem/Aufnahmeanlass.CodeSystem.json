@@ -1,0 +1,55 @@
+{
+  "resourceType": "CodeSystem",
+  "title": "Aufnahmeanlass",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
+    ]
+  },
+  "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-fall/CodeSystem/Aufnahmeanlass",
+  "valueSet": "https://www.medizininformatik-initiative.de/fhir/core/modul-fall/ValueSet/Aufnahmeanlass",
+  "date": "2020-05-09",
+  "publisher": "Medizininformatik Initative",
+  "experimental": false,
+  "count": 8,
+  "name": "Aufnahmeanlass",
+  "version": "0.9",
+  "status": "draft",
+  "description": "Aufnahmeanlass nach §21 KHEntgG",
+  "compositional": false,
+  "content": "complete",
+  "concept": [
+    {
+      "code": "E",
+      "display": "Einweisung durch einen Arzt"
+    },
+    {
+      "code": "Z",
+      "display": "Einweisung durch einen Zahnarzt"
+    },
+    {
+      "code": "N",
+      "display": "Notfall"
+    },
+    {
+      "code": "R",
+      "display": "Aufnahme nach vorausgehender Behandlung in einer Rehabilitationseinrichtung"
+    },
+    {
+      "code": "V",
+      "display": "Verlegung mit Behandlungsdauer im verlegenden Krankenhaus länger als 24 Stunden"
+    },
+    {
+      "code": "A",
+      "display": "Verlegung mit Behandlungsdauer im verlegenden Krankenhaus bis zu 24 Stunden"
+    },
+    {
+      "code": "G",
+      "display": "Geburt"
+    },
+    {
+      "code": "B",
+      "display": "Begleitperson oder mitaufgenommene Pflegekraft"
+    }
+  ]
+}

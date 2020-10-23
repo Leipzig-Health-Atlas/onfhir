@@ -14,7 +14,7 @@ services:
     build: .
     restart: always
     environment:
-      - APP_CONF_FILE=/fhir/fair4health.conf
+      - APP_CONF_FILE=/fhir/mii.conf
       - LOGBACK_CONF_FILE=/fhir/conf/logback.xml
       - FHIR_ROOT_URL=http://127.0.0.1:8080/fhir
       - DB_HOST=mongo:27017

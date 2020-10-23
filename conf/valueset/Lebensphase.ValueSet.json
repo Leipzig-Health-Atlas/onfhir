@@ -1,0 +1,42 @@
+{
+  "resourceType": "ValueSet",
+  "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-diagnose/ValueSet/Lebensphase",
+  "version": "1.0",
+  "name": "Lebensphase",
+  "title": "Lebensphase",
+  "status": "active",
+  "experimental": false,
+  "publisher": "Medizininformatik Initative",
+  "description": "Dieses Valueset enthält die Codes zur Beschreibung von Altersklassen/Lebensphasen",
+  "immutable": false,
+  "copyright": "This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/getsnomed-ct or info@snomed.org.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "133936004",
+            "display": "Adult (person)"
+          },
+          {
+            "code": "133937008",
+            "display": "Adolescent (person)"
+          },
+          {
+            "code": "410601007",
+            "display": "Childhood age person (person)"
+          },
+          {
+            "code": "105724001:246454002=713153009",
+            "display": "Disease related state (finding):Occurrence (attribute)=Toddler (qualifier value)"
+          },
+          {
+            "code": "133931009",
+            "display": "Infant (person)"
+          }
+        ]
+      }
+    ]
+  }
+}

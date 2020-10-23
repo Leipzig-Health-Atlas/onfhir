@@ -1,0 +1,44 @@
+{
+    "resourceType":"CodeSystem",
+    "url":"https://www.medizininformatik-initiative.de/fhir/core/modul-person/CodeSystem/Vitalstatus",
+    "version": "1.0",
+    "name":"Vitalstatus",
+    "status":"active",
+    "experimental":true,
+    "date":"2019-12-23",
+    "publisher":"Medizininformatik Initative",
+    "description":"Vitalstatus des Patienten",
+    "caseSensitive":true,
+    "valueSet":"https://www.medizininformatik-initiative.de/fhir/core/modul-person/ValueSet/Vitalstatus",
+    "content":"complete",
+    "concept": [
+        {
+            "code":"L",
+            "display":"Patient lebt"
+        },
+        {
+            "code":"T",
+            "display":"Patient verstorben"
+        },
+        {
+            "code":"A",
+            "display":"unbekannt, Patient nicht mehr auffindbar (lost to follow-up)"
+        },
+        {
+            "code":"N",
+            "display":"unbekannt, Betreuung/Nachsorge nicht mehr nötig"
+        },
+        {
+            "code":"B",
+            "display":"unbekannt, Patient ist anderenorts in Betreuung"
+        },
+        {
+            "code":"V",
+            "display":"unbekannt, Patient verweigert weitere Betreuung"
+        },
+        {
+            "code":"X",
+            "display":"unbekannt"
+        }
+    ]
+}
